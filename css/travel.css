@@ -1,0 +1,41 @@
+/* 공통스타일 */
+a {
+  text-decoration: none;
+}
+
+.inner {
+  width: 1100px;
+  margin: 0 auto;
+  position: relative;
+}
+
+
+/* header */
+header {
+  width: 100%;
+  top: 0;
+  background-color: #AFECFF;
+}
+
+header>.inner {
+  height: 100px;
+}
+
+
+header .logo {
+  top: 20px;
+  background-color: wheat;
+  position: absolute;
+}
+
+
+header .submenu {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header .submenu .menu {
+  display: flex;
+}
