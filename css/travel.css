@@ -1,38 +1,77 @@
 /* 공통스타일 */
-a {
-  text-decoration: none;
+
+*{
+  box-sizing: border-box;
 }
 
-.inner {
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* .inner {
   width: 1100px;
   margin: 0 auto;
   position: relative;
-}
+} */
 
+
+.btn{
+  width: 100px;
+  height: 40px;
+  border-color: white;
+  border-radius: 5px;
+  color: black;
+}
 
 /* header */
-header {
+header{
   width: 100%;
-  top: 0;
-  background-color: #AFECFF;
-}
-
-header>.inner {
   height: 100px;
+  background-color:#AFECFF;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  position: relative;
+}
+header .logo{
+  font-size: 45px;
 }
 
-.inner {
-  width: 1100px;
-  margin: auto;
+header .menu{
+  display: flex;
+}
+
+header .menu>li{
+  padding: 8px 12px;
+}
+
+header .menu>li>a{
+  font-size: 20px;
+}
+
+header .btngroup .btn+.btn{
+  margin-left: 10px;
+}
+
+header .main-menu {
+  background-color: aquamarine;
+  display: flex;
+  /* position: absolute; */
+  bottom: 0;
+  right: 0;
+}
+
+/* promotion */
+.promotion{
+  height: 600px;
+  background-color: wheat;
   position: relative;
 }
 
-header .logo {
-  top: 20px;
-  background-color: wheat;
-  position: absolute;
+.promotion .swiper{
+  height: 600px;
 }
 
-header .menu {
-  display: flex;
-}
+

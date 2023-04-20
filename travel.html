@@ -8,6 +8,12 @@
     <!-- 스타일 초기화: 브라우저 별도 다른 기본스타일이 적용되는 것을 초기화 -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
 
+    <!-- 구글 머티리얼 아이콘: 구글에서 제공하는 머티리얼 스타일의 아이콘, 글자처럼 취급 가능한 장점 -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+
+    <!-- SWIPER(8버전으로 진행) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+
     <!-- css -->
     <link rel="stylesheet" href="./css/travel.css">
 
@@ -17,30 +23,78 @@
 </head>
 <body>
   <header>
-    <div class="inner">
-      <!-- logo -->
-      <a href="" class="logo">TRAVEL</a>
+    <div class="logo">
+      <a href="#">TRAVEL</a>
+    </div>
 
-      <nav class="nav">
-        <ul class="menu">
-          <li><a href="javascript:void(0)">투어&티켓</a></li>
-          <li><a href="javascript:void(0)">호텔</a></li>
-          <li><a href="javascript:void(0)">패키지여행</a></li>
-          <li><a href="javascript:void(0)">패키지여행</a></li>
-          <li><a href="javascript:void(0)">패키지여행</a></li>
-        </ul>
+    <nav class="nav">
+      <ul class="menu">
+        <li><a href="javascript:void(0)">테마여행</a></li>
+        <li><a href="javascript:void(0)">개별여행</a></li>
 
-      </nav>
+        <li class="main-menu">
+          <a href="javascript:void(0)" class="item-name">패키지여행</a>
+          <div class="item-contents">
+            <div class="contents-menu">
+              <ul>
+                <li>서울/인천/경기</li>
+                <li>강원도</li>
+                <li>전라도</li>
+                <li>제주도</li>
+              </ul>
+            </div>
+          </div>
+        </li>
 
-      <!-- <div class="btn-group">
-        <button type="button" class="btn">로그인</button>
-        <button type="button" class="btn">회원가입</button>  
-      </div> -->
+        <li><a href="javascript:void(0)">투어</a></li>
+        <li><a href="javascript:void(0)">호텔</a></li>     
+      </ul>
+    </nav>
 
-
-      </div>
-
+    <div class="btngroup">
+      <button type="button" class="btn">로그인</button>
+      <button type="button" class="btn">회원가입</button>
     </div>
   </header>
+
+  <section class="promotion">
+    <div class="swiper">
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide">
+          <img src="" alt="">          
+        </div>
+
+        <div class="swiper-slide">
+          <img src="" alt="">          
+        </div>
+
+        <div class="swiper-slide">
+          <img src="" alt="">          
+        </div>
+
+        <div class="swiper-slide">
+          <img src="" alt="">          
+        </div>
+
+      </div>
+    </div>
+
+    <!-- <div class="swiper-pagination">
+      <div class="swiper-button-prev">
+        <span class="material-icons">arrow_back</span>
+      </div>
+
+      <div class="swiper-button-next">
+        <span class="material-icons">arrow_forward</span>
+      </div>
+    </div> -->
+
+  </section>
+
+
+  <footer>
+
+  </footer>
 </body>
 </html>
