@@ -14,6 +14,22 @@
     <!-- SWIPER(8버전으로 진행) -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
 
+    <!--  GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js" 
+    integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- GSAP & ScrollToPlugin -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollToPlugin.min.js" 
+    integrity="sha512-WFeBxQtM/n6U8/Nd0Hz/Hq7n75NImbzM7Kc0y/4kE0kHnH1Be+nzm32RwbGoDsW1D9fjjPvI8LIWxLrZhxew/w==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- SWIPER(8버전으로 진행) -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <!-- ScrollMagic -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js" integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
     <!-- css -->
     <link rel="stylesheet" href="./css/travel.css">
 
@@ -32,18 +48,14 @@
         <li><a href="javascript:void(0)">테마여행</a></li>
         <li><a href="javascript:void(0)">개별여행</a></li>
 
-        <li class="main-menu">
+        <li>
           <a href="javascript:void(0)" class="item-name">패키지여행</a>
-          <div class="item-contents">
-            <div class="contents-menu">
-              <ul>
-                <li>서울/인천/경기</li>
-                <li>강원도</li>
-                <li>전라도</li>
-                <li>제주도</li>
-              </ul>
-            </div>
-          </div>
+          <ul class="sub-menu">
+            <li><a href=""><span>서울/인천/경기</span></a></li>
+            <li><a href=""><span>강원도</span></a></li>
+            <li><a href=""><span>전라도</span></a></li>
+            <li><a href=""><span>제주도</span></a></li>
+          </ul>
         </li>
 
         <li><a href="javascript:void(0)">투어</a></li>
@@ -62,19 +74,19 @@
       <div class="swiper-wrapper">
 
         <div class="swiper-slide">
-          <img src="" alt="">          
+          <img src="./image/wallpaper.jpg" alt="">          
         </div>
 
         <div class="swiper-slide">
-          <img src="" alt="">          
+          <img src="./image/wallpaper2.jpg" alt="">          
         </div>
 
         <div class="swiper-slide">
-          <img src="" alt="">          
+          <img src="./image/wallpaper3.jpg" alt="">          
         </div>
 
         <div class="swiper-slide">
-          <img src="" alt="">          
+          <img src="./image/wallpaper4.jpg" alt="">          
         </div>
 
       </div>
@@ -91,6 +103,45 @@
     </div> -->
 
   </section>
+
+  <!-- product travel -->
+  <section class="product scroll-spy">
+    <div class="inner">
+      <img src="./image/jeju.jpg" alt="" class="test ">
+
+      <div class="text-group">
+        <p class="title">바라왔던 제주의 봄, 드디어 봄 🌺</p>
+        <p class="description">제주 속 아름다운 우도 섬을 함께 볼 수 있는 실속여행 상품입니다. <br>※ 전국 출발 가능 / 예약 후 문의 해주세요. (여행기간 3/4일)
+          <br>#우도여행#전국출발#제주도패키지 # 제주 #우도관광 #제주핵심명소 #현지특식 #섬여행 </p>
+
+        <div class="more" >
+          <a href="javascript:void(0)" class="btn">자세히보기</a>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- guide -->
+  <section class="guide scroll-spy">
+    <div class="inner">
+      <div class="text-group back-to-position to-right">
+        <p class="title">봄 나들이와 호캉스를 동시에! 🌷 봄캉스 추천 호텔 🌷</p>
+        <p class="description">[강릉] 스카이베이 호텔 경포<br>
+          경포대 벚꽃축제🌸, 쿠폰할인 <br> #경포해변&경포호 인근 #루프탑 인피니티풀<br>
+          104,796원~</p>
+        <div class="more" >
+          <a href="javascript:void(0)" class="btn">자세히보기</a>
+        </div>
+      </div>
+      <img src="./image/spring.jpg" alt="" class="guide-logo back-to-position to-left">
+    </div>
+
+  </section>
+
+
+
+
 
 
   <footer>

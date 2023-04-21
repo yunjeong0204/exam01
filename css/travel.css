@@ -1,77 +1,213 @@
 /* 공통스타일 */
 
-*{
+* {
   box-sizing: border-box;
 }
 
 a {
   text-decoration: none;
   color: black;
+  display: block;
 }
 
-/* .inner {
-  width: 1100px;
-  margin: 0 auto;
-  position: relative;
-} */
+img {
+  display: block;
+}
 
 
-.btn{
+.btn {
   width: 100px;
   height: 40px;
   border-color: white;
   border-radius: 5px;
   color: black;
+  cursor: pointer;
+}
+
+.inner {
+  width: 1100px;
+  margin: 0px auto;
+  position: relative;
 }
 
 /* header */
-header{
+header {
   width: 100%;
   height: 100px;
-  background-color:#AFECFF;
+  background-color: #AFECFF;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  position: relative;
 }
-header .logo{
+
+header .logo {
   font-size: 45px;
-}
-
-header .menu{
-  display: flex;
-}
-
-header .menu>li{
-  padding: 8px 12px;
-}
-
-header .menu>li>a{
-  font-size: 20px;
-}
-
-header .btngroup .btn+.btn{
   margin-left: 10px;
 }
 
-header .main-menu {
-  background-color: aquamarine;
+header .nav {
   display: flex;
-  /* position: absolute; */
-  bottom: 0;
-  right: 0;
+  align-items: center;
 }
 
-/* promotion */
-.promotion{
-  height: 600px;
-  background-color: wheat;
+header .nav .menu {
+  display: flex;
+}
+
+
+header .nav .menu>li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   position: relative;
 }
 
-.promotion .swiper{
-  height: 600px;
+header .nav .menu>li>a {
+  padding: 8px 16px;
+  font-size: 20px;
 }
 
 
+
+header .nav .menu>li:hover .sub-menu {
+  display: block;
+  background-color: white;
+}
+
+.sub-menu {
+  position: absolute;
+  top: 34px;
+  white-space: nowrap;
+  z-index: 9;
+  display: none;
+}
+
+.sub-menu>li>a {
+  padding: 12px 22px;
+}
+
+header .btngroup .btn+.btn {
+  margin-left: 10px;
+}
+
+
+
+/* promotion */
+.promotion {
+  display: flex;
+  height: 600px;
+  position: relative;
+  justify-content: center;
+  /* overflow: hidden;
+  transition: height .4s;
+ */
+}
+
+/* .promotion.hide {
+  height: 0;
+} */
+
+.promotion .swiper {
+  /* 이미지 크기(819px) 3개 && 사이 여백(10px) 2개 = 2477px*/
+  width: calc(1280px * 3 + 10px * 2);
+  height: 600px;
+
+  /* 2477px 유지를 위해 감소 너비 비율을 0으로 */
+}
+
+
+
+.promotion .swiper {
+  height: 600px;
+}
+
+/* .promotion .swiper-pagination {
+  position: absolute;
+  bottom: 50px;
+}
+
+.promotion .swiper-button-prev,
+.promotion .swiper-button-next {
+  width: 42px;
+  height: 42px;
+  border: 2px solid #333;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 1;
+  color: #333;
+  transition: .4s;
+} */
+
+.product {
+  background-color: beige;
+}
+
+.product .inner {
+  height: 400px;
+  top: 55px;
+}
+
+.product .text-group {
+  position: absolute;
+  top: 40px;
+  left: 40%;
+}
+
+
+.product .text-group .title {
+  font-weight: bold;
+  font-size: 27px;
+  margin-bottom: 32px;
+}
+
+.product .text-group .description {
+  margin-bottom: 35px;
+  font-size: 21px;
+}
+
+.product .text-group .btn {
+  padding: 10px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  background-color: #AFECFF;
+}
+
+/* guide */
+.guide {
+  background-color: lightpink;
+}
+
+.guide .inner {
+  height: 400px;
+}
+
+.guide .text-group {
+  position: absolute;
+  top: 100px;
+}
+
+.guide .text-group .title {
+  font-weight: bold;
+  font-size: 28px;
+  margin-bottom: 25px;
+}
+
+.guide .text-group .description {
+  margin-bottom: 35px;
+  font-size: 22px;
+}
+
+.guide .text-group .btn {
+  padding: 10px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  background-color: #AFECFF;
+}
+
+.guide .guide-logo {
+  position: absolute;
+  right: 0;
+}
