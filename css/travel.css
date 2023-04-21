@@ -5,8 +5,8 @@
 }
 
 a {
-  text-decoration: none;
   color: black;
+  text-decoration: none;
   display: block;
 }
 
@@ -18,9 +18,7 @@ img {
 .btn {
   width: 100px;
   height: 40px;
-  border-color: white;
-  border-radius: 5px;
-  color: black;
+  border-radius: 8px;
   cursor: pointer;
 }
 
@@ -36,60 +34,91 @@ header {
   height: 100px;
   background-color: #AFECFF;
   display: flex;
+  padding: 20px 60px;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
 }
 
 header .logo {
   font-size: 45px;
-  margin-left: 10px;
 }
 
 header .nav {
   display: flex;
-  align-items: center;
 }
 
-header .nav .menu {
+header .menu {
   display: flex;
 }
 
-
-header .nav .menu>li {
+header .menu > li {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   position: relative;
 }
 
-header .nav .menu>li>a {
-  padding: 8px 16px;
+header .menu > li > a {
+  padding: 10px 25px;
   font-size: 20px;
 }
 
+header .menu > li:hover{
+  font-weight: bold;
+}
 
-
-header .nav .menu>li:hover .sub-menu {
+header .menu > li:hover .sub-menu {
+  font-weight: bold;
   display: block;
   background-color: white;
+  display: flex;
 }
 
 .sub-menu {
   position: absolute;
-  top: 34px;
+  top: 32px;
   white-space: nowrap;
-  z-index: 9;
   display: none;
 }
 
-.sub-menu>li>a {
-  padding: 12px 22px;
+.sub-menu > li > a {
+  padding: 11px 20px;
 }
 
-header .btngroup .btn+.btn {
-  margin-left: 10px;
+header .btngroup{
+  padding: 20px;
 }
+
+header .btngroup .btn{
+  border-color: white;
+  background-color: white;
+}
+
+/* list */
+.list {
+  height: 500px;
+  background-color: bisque;
+}
+
+.list span {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.list .img-group {
+  display: flex;
+}
+
+.list .img-group > img {
+  width: 350px;
+  height: 250px;
+  margin: 20px 65px;
+}
+
+.list .img-group > img > p {
+  display: flex;
+}
+
+
+
 
 
 
@@ -99,21 +128,11 @@ header .btngroup .btn+.btn {
   height: 600px;
   position: relative;
   justify-content: center;
-  /* overflow: hidden;
-  transition: height .4s;
- */
 }
 
-/* .promotion.hide {
-  height: 0;
-} */
-
 .promotion .swiper {
-  /* 이미지 크기(819px) 3개 && 사이 여백(10px) 2개 = 2477px*/
   width: calc(1280px * 3 + 10px * 2);
   height: 600px;
-
-  /* 2477px 유지를 위해 감소 너비 비율을 0으로 */
 }
 
 
