@@ -92,36 +92,6 @@ header .btngroup .btn{
   background-color: white;
 }
 
-/* list */
-.list {
-  height: 500px;
-  background-color: bisque;
-}
-
-.list span {
-  font-size: 25px;
-  font-weight: bold;
-}
-
-.list .img-group {
-  display: flex;
-}
-
-.list .img-group > img {
-  width: 350px;
-  height: 250px;
-  margin: 20px 65px;
-}
-
-.list .img-group > img > p {
-  display: flex;
-}
-
-
-
-
-
-
 /* promotion */
 .promotion {
   display: flex;
@@ -158,6 +128,39 @@ header .btngroup .btn{
   transition: .4s;
 } */
 
+/* list */
+.list {
+  display: flex;
+  height: 500px;
+  background-color: bisque;
+}
+
+.list .item{
+  width: 25%;
+  margin-top: 70px;
+}
+
+.list .item img{
+  width: 100%;
+  padding: 10px;
+}
+
+.list .item .desc{
+  margin-top: 5px;
+}
+
+.list .item .desc ul > li{
+  text-align: center;
+  padding: 5px;
+  font-size: 20px;
+}
+
+
+
+
+
+
+/* product */
 .product {
   background-color: beige;
 }
