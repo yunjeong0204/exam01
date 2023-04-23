@@ -92,47 +92,27 @@ header .btngroup .btn{
   background-color: white;
 }
 
-/* promotion */
-.promotion {
+/* banner */
+.banner{
+  height: 600px;
+  background-color: lightpink;
   display: flex;
-  height: 600px;
-  position: relative;
   justify-content: center;
+  position: relative;
 }
 
-.promotion .swiper {
-  width: calc(1280px * 3 + 10px * 2);
+.banner .swiper{
+  width: 100%;
   height: 600px;
 }
 
 
 
-.promotion .swiper {
-  height: 600px;
-}
-
-/* .promotion .swiper-pagination {
-  position: absolute;
-  bottom: 50px;
-}
-
-.promotion .swiper-button-prev,
-.promotion .swiper-button-next {
-  width: 42px;
-  height: 42px;
-  border: 2px solid #333;
-  border-radius: 50%;
-  position: absolute;
-  z-index: 1;
-  color: #333;
-  transition: .4s;
-} */
 
 /* list */
 .list {
   display: flex;
   height: 500px;
-  background-color: bisque;
 }
 
 .list .item{
@@ -143,6 +123,7 @@ header .btngroup .btn{
 .list .item img{
   width: 100%;
   padding: 10px;
+  border-radius: 15px;
 }
 
 .list .item .desc{
@@ -154,11 +135,6 @@ header .btngroup .btn{
   padding: 5px;
   font-size: 20px;
 }
-
-
-
-
-
 
 /* product */
 .product {
@@ -195,6 +171,7 @@ header .btngroup .btn{
   font-weight: 700;
   background-color: #AFECFF;
 }
+
 
 /* guide */
 .guide {
@@ -233,3 +210,15 @@ header .btngroup .btn{
   position: absolute;
   right: 0;
 }
+
+.move {
+  transition: 5s;
+}
+.move.left {
+  transform: translateX(10px);
+}
+.move.right {
+  transform: translateX(-10px);
+}
+
+
