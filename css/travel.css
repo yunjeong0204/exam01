@@ -109,6 +109,9 @@ header .btngroup .btn{
 }
 
 .banner .swiper{
+    overflow: hidden;
+
+  margin: auto;
   width: 100%;
 }
 
@@ -118,7 +121,7 @@ header .btngroup .btn{
 }
 
 .banner .swiper .slide img{
-  display: block;
+  display: flex;
   width: 100%;
   height: 600px;
 }
