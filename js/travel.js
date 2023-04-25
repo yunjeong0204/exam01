@@ -1,3 +1,19 @@
+
+
+// 수평슬라이드
+new Swiper('.banner .swiper', {
+  direction : 'horizontal',
+  loop: true, // 반복 재생
+  autoplay: {
+    delay: 5000
+  }, 
+  slidePerView: 4,
+  navigation: {
+    prevEl: '.banner .prev',
+    nextEl: '.banner .next'
+  },
+});
+
 const spyEls = document.querySelectorAll('section.scroll-spy');
 spyEls.forEach(function (spyEl) {
   new ScrollMagic
@@ -9,15 +25,3 @@ spyEls.forEach(function (spyEl) {
     .addTo(new ScrollMagic.Controller()); 
 });
 
-
-// 수평슬라이드
-// new Swiper('.banner .swiper', {
-//   direction : 'horizontal',
-//   loop: true, // 반복 재생
-//   autoplay: true, 
-//   slidePerView: 1,
-//   navigation: {
-//     prevEl: '.banner .prev',
-//     nextEl: '.banner .next'
-//   },
-// });

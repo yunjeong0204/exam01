@@ -119,12 +119,54 @@ header .btngroup .btn{
 
 /* banner */
 .banner{
-  height: 500px;
-  background-color: bisque;
+  background-color: #f7ffff;
+  height: 400px;
+  position: relative;
+}
+
+.banner h2{
+  font-weight: bold;
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.banner .swiper{
+  position: absolute;
+  overflow: hidden;
+  margin: 10px 80px;
   display: flex;
+}
+
+.banner .swiper img{
+  opacity: 0.7;
+  border-radius: 50%;
+  padding: 0 60px;
+}
+
+/* .banner .swiper span em{
+  position: absolute;
+  opacity: 0.3;
+  font-size: 17px;
+  top: 40%;
+  left: 80px;
+} */
+
+.banner .prev, 
+.banner .next{
+  position: absolute;
+  top: 50%;
+}
+
+.banner .prev{
+  margin-left: 4%;
   
 }
 
+.banner .next{
+  margin-right: 4%;
+  right: 0;
+}
 
 /* nav list-title */
 .list-title{
@@ -134,8 +176,8 @@ header .btngroup .btn{
   height: 30px;
   font-weight: bold;
   font-size: 30px;
-  text-align: center;
-  padding: 10px;
+  margin-left: 10px;
+  margin-top: 30px;
 }
 
 
@@ -148,21 +190,36 @@ header .btngroup .btn{
 
 
 .list .item{
+  position: relative;
   width: 25%;
   margin-top: 10px;
+  cursor: pointer;
 }
 
 .list .item img{
   width: 100%;
   padding: 10px;
-  border-radius: 15px;
+  border-radius: 20px;
   transition: 1s;
 }
 
-.list .item img:hover{
+.list .item span img:hover{
   opacity: 0.5;
-  transform: scale(1.1);
 }
+
+.list .item span em{
+  position: absolute;
+  font-size: 30px;
+  left: 37%;
+  top: 38%;
+  opacity: 0.5;
+
+}
+
+.list .item span em:hover{
+  opacity: 1;
+}
+
 
 .list .item .desc{
   margin-top: 5px;
@@ -176,7 +233,6 @@ header .btngroup .btn{
 
 /* product */
 .product {
-  border-top: 1px solid #c6f7f7;
   background-color: #f7ffff;
 }
 
@@ -232,7 +288,6 @@ header .btngroup .btn{
 
 /* guide */
 .guide {
-  border-top: 1px solid #c6f7f7;
   background-color: #f7ffff;
 }
 
