@@ -118,76 +118,50 @@ header .btngroup .btn{
 }
 
 /* banner */
-/* .banner{
-  width: 100%;
-  height: 600px;
-  position: relative;
+.banner{
+  height: 500px;
+  background-color: bisque;
   display: flex;
-  overflow: hidden;
+  
 }
 
-.banner .swiper{
-    overflow: hidden;
 
-  margin: auto;
+/* nav list-title */
+.list-title{
+  background-color: #f7ffff;
+  margin-top: 20px;
   width: 100%;
+  height: 30px;
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+  padding: 10px;
 }
 
-.banner .swiper .slide{
-  position: relative;
-  width: 100%;
-}
-
-.banner .swiper .slide img{
-  display: flex;
-  width: 100%;
-  height: 600px;
-}
-
-.banner .swiper-button{
-  position: absolute;
-  z-index: 1;
-}
-
-.banner .prev,
-.banner .next{
-  position: absolute;
-  margin-top: 300px; 
-  width: 50px;
-  height: 50px;
-  z-index: 2;
-  cursor: pointer;
-  color: white;
-}
-
-.banner .next{
-  right: 10px;
-}
-
-.banner .prev{
-  left: 15px;
-} */
 
 /* list */
 .list {
   background-color: #f7ffff;
   display: flex;
-  height: 500px;
+  height: 400px;
 }
+
 
 .list .item{
   width: 25%;
-  margin-top: 70px;
+  margin-top: 10px;
 }
 
 .list .item img{
   width: 100%;
   padding: 10px;
   border-radius: 15px;
+  transition: 1s;
 }
 
-.list .item img > ul > li {
-  margin-left: 30px;
+.list .item img:hover{
+  opacity: 0.5;
+  transform: scale(1.1);
 }
 
 .list .item .desc{
