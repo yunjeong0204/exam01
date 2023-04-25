@@ -99,8 +99,16 @@ header .btngroup .btn{
   background-color: white;
 }
 
+/* youtube */
+.youtube{
+  position: relative;
+  height: 600px;
+  background-color: antiquewhite;
+  
+}
+
 /* banner */
-.banner{
+/* .banner{
   width: 100%;
   height: 600px;
   position: relative;
@@ -148,7 +156,7 @@ header .btngroup .btn{
 
 .banner .prev{
   left: 15px;
-}
+} */
 
 /* list */
 .list {
