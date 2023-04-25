@@ -1,5 +1,4 @@
 
-
 // 수평슬라이드
 new Swiper('.banner .swiper', {
   direction : 'horizontal',
