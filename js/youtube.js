@@ -1,4 +1,4 @@
-var tag = document.createElement('script');
+let tag = document.createElement('script');
 
       tag.src = "https://www.youtube.com/iframe_api";
       var firstScriptTag = document.getElementsByTagName('script')[0];
@@ -6,15 +6,21 @@ var tag = document.createElement('script');
 
       // 3. This function creates an <iframe> (and YouTube player)
       //    after the API code downloads.
-      var player;
+      // var player;
       function onYouTubeIframeAPIReady() {
-        player = new YT.Player('player', {
-          height: '360',
-          width: '640',
-          videoId: 'M7lc1UVf-VE',
+        new YT.Player('player', {
+          // height: '360',
+          // width: '640',
+          videoId: 't_P04wRuslg',
+          playerVars: {
+            autoplay: true,
+            loop: true,
+            playlist: 't_P04wRuslg',
+          },
           events: {
-            'onReady': onPlayerReady,
-            'onStateChange': onPlayerStateChange
+            onReady: function (event) {
+              event.target.mute();
+            }
           }
         });
       }

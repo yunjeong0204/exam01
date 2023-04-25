@@ -11,13 +11,13 @@ spyEls.forEach(function (spyEl) {
 
 
 // 수평슬라이드
-new Swiper('.banner .swiper', {
-  direction : 'horizontal',
-  loop: true, // 반복 재생
-  autoplay: true, 
-  slidePerView: 1,
-  navigation: {
-    prevEl: '.banner .prev',
-    nextEl: '.banner .next'
-  },
-});
+// new Swiper('.banner .swiper', {
+//   direction : 'horizontal',
+//   loop: true, // 반복 재생
+//   autoplay: true, 
+//   slidePerView: 1,
+//   navigation: {
+//     prevEl: '.banner .prev',
+//     nextEl: '.banner .next'
+//   },
+// });
