@@ -13,25 +13,26 @@ new Swiper('.banner .swiper', {
 });
 
 // swiper api
-// const swiper = new Swiper('.swiper', {
-//   slidesPerView: 1,
-//   spaceBetween: 10,
+const swiper = new Swiper('.swiper', {
+  slidesPerView: 4,
+  // spaceBetween: 5,
 
-//   breakpoints: {
-//     320: {
-//       slidesPerView: 2,
-//       spaceBetween: 20
-//     },
-//     480: {
-//       slidesPerView: 3,
-//       spaceBetween: 30
-//     },
-//     640: {
-//       slidesPerView: 4,
-//       spaceBetween: 40
-//     }
-//   }
-// })
+  breakpoints: {
+  
+    // 780: {
+    //   slidesPerView: 2,
+    //   spaceBetween: 20
+    // },
+    // 780: {
+    //   slidesPerView: 3,
+    //   spaceBetween: 30
+    // },
+    // 640: {
+    //   slidesPerView: 4,
+    //   spaceBetween: 40
+    // }
+  }
+})
 
 const spyEls = document.querySelectorAll('section.scroll-spy');
 spyEls.forEach(function (spyEl) {
