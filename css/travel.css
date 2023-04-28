@@ -28,12 +28,15 @@ img {
   position: relative;
 }
 
+.material-icons{
+  font-size: inherit;
+}
+
 
 
 /* header */
 header {
   position: relative;
-  /* width: 100%; */
   height: 100px;
   background-color: #AFECFF;
   display: flex;
@@ -48,21 +51,17 @@ header .logo {
   font-size: 45px;
 }
 
-header .nav {
-  display: flex;
-}
-
 header .menu {
   display: flex;
 }
 
 header .menu > li {
+  padding: 10px 25px;
   display: flex;
   position: relative;
 }
 
 header .menu > li > a {
-  padding: 10px 25px;
   font-size: 20px;
 }
 
@@ -102,6 +101,74 @@ header .btngroup .btn{
   background-color: white;
 }
 
+header .menu-icons{
+  position: absolute;
+  display: none;
+  right: 30px;
+  font-size: 45px;
+}
+
+header .mo-nav{
+  width: 40%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 10px 15px;
+}
+
+/* .active 뜰 때 */
+/* 
+header .mo-nav.active{
+  right: 0;
+} */
+
+header .mo-nav div{
+  text-align: right;
+}
+
+/* header .mo-nav .btn-close{
+  font-size: 45px;
+} */
+
+@media screen and (max-width: 780px) {
+  header{
+    flex-direction: column;
+  }
+
+  header .logo{
+    align-self: flex-start;
+  }
+
+  header .nav{
+    display: none;
+  }
+
+  .sub-menu > li{
+    display: none;
+  }
+
+  header .btngroup{
+    display: none;
+  }
+
+  header .menu-icons{
+    display: block;
+  }
+
+  /* header .nav.active,
+  header .btngroup.active{
+    display: block;
+  } */
+  
+  /* header .nav.active{
+    display: block;
+  } */
+
+  /* header .mo-nav{
+  display: block;
+  } */
+}
 
 
 /* youtube */
@@ -119,13 +186,6 @@ header .btngroup .btn{
 #player{
   width: 100%;
   height: 100%;
-}
-
-@media screen and (max-width: 780px) {
-  .youtube{
-    /* width: 100%; */
-  }
-  
 }
 
 /* banner */
@@ -207,10 +267,46 @@ header .btngroup .btn{
   margin-right: 50px;
 }
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 780px) {  
+  /* .banner .swiper{
+    margin: 10px 50px;
+  }*/
   
-}
+  .banner .swiper-slide{
+    margin-left: 50px;
+    padding: 10px 70px;
+  } 
 
+  .banner .swiper img{
+    height: 80%;
+  }
+
+  .banner .swiper .text1{
+    display: block;
+    bottom: 27%;
+    left: 33%;
+  }
+  
+  .banner .swiper .text2{
+    display: block;
+    bottom: 27%;
+    left: 31%;
+  }
+  
+  .banner .swiper .text3{
+    display: block;
+    bottom: 27%;
+    left: 28%;
+  }
+  
+  .banner .swiper-button-prev{
+    margin-left: 0;
+  }
+  
+  .banner .swiper-button-next{
+    margin-right: 0;
+  }
+}
 
 
 /* list */
@@ -243,13 +339,11 @@ header .btngroup .btn{
   left: 37%;
   top: 38%;
   opacity: 0.5;
-
 }
 
 .list .item span em:hover{
   opacity: 1;
 }
-
 
 .list .item .desc{
   margin-top: 5px;
@@ -260,6 +354,14 @@ header .btngroup .btn{
   padding: 5px;
   font-size: 20px;
 }
+
+@media screen and (max-width: 780px) {  
+  .list .item span em{
+    font-size: 15px;
+    top: 28%; 
+  }
+}
+
 
 /* product */
 .product {
@@ -314,6 +416,12 @@ header .btngroup .btn{
   transform: translateX(0);
 }
 
+@media screen and (max-width: 780px) {  
+  .product {
+  }
+
+  
+}
 
 
 /* guide */
@@ -395,7 +503,7 @@ footer .inner{
   text-align: center;
 }
 
-@media screen and (max-width: 780px) {
+/* @media screen and (max-width: 780px) {
   footer .inner{
     background-color: orange;
     
@@ -404,4 +512,4 @@ footer .inner{
   .inner .last{
   }
   
-}
+} */
