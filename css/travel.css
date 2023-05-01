@@ -154,20 +154,21 @@ header .mo-nav div{
 
   header .menu-icons{
     display: block;
+    line-height: 10vh;
   }
 
-  /* header .nav.active,
+  header .nav.active,
   header .btngroup.active{
     display: block;
-  } */
+  }
   
-  /* header .nav.active{
+  header .nav.active{
     display: block;
-  } */
+  }
 
-  /* header .mo-nav{
+  header .mo-nav{
   display: block;
-  } */
+  }
 }
 
 
@@ -503,13 +504,16 @@ footer .inner{
   text-align: center;
 }
 
-/* @media screen and (max-width: 780px) {
-  footer .inner{
-    background-color: orange;
-    
+@media screen and (max-width: 780px) {
+  footer{
+    height: auto;
+  }
+
+  footer ul li {
+    display: block;
+    padding: 0 5px;
+    line-height: 2;
   }
   
-  .inner .last{
-  }
   
-} */
+}
