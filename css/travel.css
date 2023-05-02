@@ -14,12 +14,12 @@ img {
   display: block;
 }
 
-
 .btn {
   width: 100px;
   height: 40px;
   border-radius: 8px;
   cursor: pointer;
+  outline: none;
 }
 
 .inner {
@@ -32,7 +32,19 @@ img {
   font-size: inherit;
 }
 
-
+/* scroll */
+.move {
+  transition: 1s;
+}
+.move.left {
+  transform: translateX(20px);
+}
+.move.right {
+  transform: translateX(-20px);
+}
+.show .move{
+  transform: translateX(0);
+}
 
 /* header */
 header {
@@ -109,27 +121,29 @@ header .menu-icons{
 }
 
 header .mo-nav{
-  width: 40%;
+  background-color: #AFECFF;
+  width: 50%;
   height: 100vh;
   position: fixed;
   top: 0;
-  right: 0;
+  right: -50%;
   padding: 10px 15px;
+  transition: .5s;
+  z-index: 5;
 }
 
 /* .active 뜰 때 */
-/* 
 header .mo-nav.active{
   right: 0;
-} */
+}
 
 header .mo-nav div{
   text-align: right;
 }
 
-/* header .mo-nav .btn-close{
+header .mo-nav .btn-close{
   font-size: 45px;
-} */
+}
 
 @media screen and (max-width: 780px) {
   header{
@@ -141,6 +155,7 @@ header .mo-nav div{
   }
 
   header .nav{
+    width: 100%;
     display: none;
   }
 
@@ -161,16 +176,21 @@ header .mo-nav div{
   header .btngroup.active{
     display: block;
   }
-  
-  header .nav.active{
-    display: block;
+
+  header .mo-nav ul{
+    margin-top: 10px;
   }
 
-  header .mo-nav{
-  display: block;
+  header .mo-nav ul > li{
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 10vh;
+  }
+
+  header .mo-nav ul > li > a:hover{
+    color: white;
   }
 }
-
 
 /* youtube */
 .youtube{
@@ -269,37 +289,26 @@ header .mo-nav div{
 }
 
 @media screen and (max-width: 780px) {  
-  /* .banner .swiper{
+  .banner{
+    overflow: hidden;
+  }
+
+  .banner .swiper{
     margin: 10px 50px;
-  }*/
+  }
   
   .banner .swiper-slide{
-    margin-left: 50px;
-    padding: 10px 70px;
+    margin-left: 60px;
   } 
 
   .banner .swiper img{
     height: 80%;
   }
 
-  .banner .swiper .text1{
-    display: block;
-    bottom: 27%;
-    left: 33%;
+  .banner .swiper-slide span{
+    position: absolute;
   }
-  
-  .banner .swiper .text2{
-    display: block;
-    bottom: 27%;
-    left: 31%;
-  }
-  
-  .banner .swiper .text3{
-    display: block;
-    bottom: 27%;
-    left: 28%;
-  }
-  
+
   .banner .swiper-button-prev{
     margin-left: 0;
   }
@@ -380,7 +389,6 @@ header .mo-nav div{
   left: 40%;
 }
 
-
 .product .text-group .title {
   font-weight: bold;
   font-size: 27px;
@@ -404,26 +412,41 @@ header .mo-nav div{
   color: white;
 }
 
-.move {
-  transition: 1s;
-}
-.move.left {
-  transform: translateX(20px);
-}
-.move.right {
-  transform: translateX(-20px);
-}
-.show .move{
-  transform: translateX(0);
-}
-
 @media screen and (max-width: 780px) {  
-  .product {
+  .product{
+    overflow: hidden;
   }
 
-  
-}
+  .product .inner{
+    position: relative;
+    overflow: hidden;
+  }
 
+  .product .inner > img{
+    width: 300px;
+    height: 250px;
+  }
+  
+  .product .text-group {
+    position: absolute;
+    left: 31%;
+  }
+  
+  .product .text-group .title {
+    font-size: 25px;
+  }
+
+  .product .text-group .description {
+    width: 400px;
+    overflow: hidden;
+
+    font-size: 17px;
+    display: -webkit-box; 
+    -webkit-box-orient: vertical; 
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 4; 
+  }
+}
 
 /* guide */
 .guide {
@@ -468,6 +491,26 @@ header .mo-nav div{
   right: 0;
 }
 
+@media screen and (max-width: 780px) {
+  .guide{
+    overflow: hidden;
+  }
+
+  .guide .text-group .title {
+    font-size: 21px;
+  }
+
+  .guide .text-group .description {
+    font-size: 19px;
+  }
+
+  .guide .guide-logo {
+    width: 250px;
+    height: 250px;
+    top: 33%;
+    right: 33%;
+  }
+}
 
 /* footer */
 footer .inner{
@@ -492,7 +535,6 @@ footer .inner{
   color: white;
 }
 
-
 .inner .info{
   top: 20px;
   border-top: 1px solid gray;
@@ -504,16 +546,23 @@ footer .inner{
   text-align: center;
 }
 
+
 @media screen and (max-width: 780px) {
-  footer{
-    height: auto;
+  footer .inner .last{
+    padding: 10px;
+    display: block;
+    text-align: center;
   }
 
-  footer ul li {
-    display: block;
-    padding: 0 5px;
-    line-height: 2;
+  .inner .last a{
+    padding: 5px;
   }
   
-  
+  .inner .info{
+    margin-top: 10px;
+  }
+
+  .inner .info p{
+    margin-top: 50px;
+  }
 }

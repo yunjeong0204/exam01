@@ -31,25 +31,12 @@ new Swiper('.banner .swiper', {
 });
 
 // swiper api
-// const swiper = new Swiper('.swiper', {
-//   slidesPerView: 1,
-//   spaceBetween: 10,
-//   breakpoints: {
-//     480: {
-//       slidesPerView: 2,
-//       spaceBetween: 20
-//     },
-//     640: {
-//       slidesPerView: 3,
-//       spaceBetween: 30
-//     },
-//     780: {
-//       slidesPerView: 4,
-//       spaceBetween: 40
-//     }
-//   }
-// })
 
+
+
+
+
+// scroll
 const spyEls = document.querySelectorAll('section.scroll-spy');
 spyEls.forEach(function (spyEl) {
   new ScrollMagic
