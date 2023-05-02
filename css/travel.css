@@ -190,6 +190,17 @@ header .mo-nav .btn-close{
   header .mo-nav ul > li > a:hover{
     color: white;
   }
+
+  header .mo-btngroup {
+    position: absolute;
+    margin-top: 40px;
+    left: 0;
+    margin-left: 10px;
+  }
+
+  header .mo-btngroup .btn:hover{
+    background-color: white;
+  }
 }
 
 /* youtube */
@@ -280,11 +291,11 @@ header .mo-nav .btn-close{
 }
 
 .banner .swiper-button-prev{
-  margin-left: 50px;
-  
+  margin-left: 50px; 
 }
 
 .banner .swiper-button-next{
+  z-index: 1;
   margin-right: 50px;
 }
 
