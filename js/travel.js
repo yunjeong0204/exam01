@@ -15,6 +15,14 @@ btnclose.addEventListener('click', function () {
   mobile.classList.remove('active');
 });
 
+// 상단 이동 버튼
+const TopEl = document.querySelector('#top');
+TopEl.addEventListener('click', function () {
+  gsap.to(window, 0.7, {
+    scrollTo: 0 
+  });
+});
+
 
 // 수평슬라이드
 new Swiper('.banner .swiper', {
@@ -29,12 +37,6 @@ new Swiper('.banner .swiper', {
     nextEl: '.banner .swiper-button-next',
   },
 });
-
-// swiper api
-
-
-
-
 
 // scroll
 const spyEls = document.querySelectorAll('section.scroll-spy');

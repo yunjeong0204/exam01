@@ -1,5 +1,4 @@
 /* 공통스타일 */
-
 * {
   box-sizing: border-box;
 }
@@ -383,7 +382,6 @@ header .mo-nav .btn-close{
   }
 }
 
-
 /* product */
 .product {
   background-color: #f7ffff;
@@ -496,7 +494,6 @@ header .mo-nav .btn-close{
   color: white;
 }
 
-
 .guide .guide-logo {
   position: absolute;
   right: 0;
@@ -557,7 +554,6 @@ footer .inner{
   text-align: center;
 }
 
-
 @media screen and (max-width: 780px) {
   footer .inner .last{
     padding: 10px;
@@ -575,5 +571,28 @@ footer .inner{
 
   .inner .info p{
     margin-top: 50px;
+  }
+}
+
+/* 상단 이동 버튼 top */
+#top{
+  display: block;
+  margin-top: -6%;
+  background-color: #81b0f7;
+  border: 3px solid white;
+  border-radius: 10px;
+  position: absolute;
+  color: white;
+  right: 6%;
+  cursor: pointer;
+}
+
+#top > span{
+  font-size: 50px;
+}
+
+@media screen and (max-width: 780px) {
+  #top{
+    margin-top: -9%;
   }
 }
